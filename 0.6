@@ -1,0 +1,24 @@
+-- Create a new database named UniversityDB
+CREATE DATABASE UniversityDB;
+
+-- Use the UniversityDB database
+USE UniversityDB;
+
+-- Create the Students table
+CREATE TABLE Students (
+  StudentID INT PRIMARY KEY,
+  FirstName VARCHAR(50),
+  LastName VARCHAR(50),
+  Age INT,
+  Major VARCHAR(50)
+);
+
+-- Insert sample data into the Students table
+INSERT INTO Students (StudentID, FirstName, LastName, Age, Major)
+VALUES
+  (1, 'John', 'Doe', 20, 'Computer Science'),
+  (2, 'Jane', 'Smith', 21, 'Biology'),
+  (3, 'Bob', 'Johnson', 22, 'Mathematics'),
+  (4, 'Alice', 'Williams', 19, 'Engineering'),
+  (5, 'Mike', 'Brown', 23, 'Business');
+
